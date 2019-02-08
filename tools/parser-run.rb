@@ -5,4 +5,4 @@ page = Nokogiri::HTML(RestClient.get("https://www.merriam-webster.com/word-of-th
 
 header = page.css(".word-header").css("h1")
 header.inner_text
-Pry.start
+binding.pry

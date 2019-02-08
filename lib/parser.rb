@@ -1,6 +1,6 @@
 #Get the merriam webster word of the day and
 #return the word and defenition
-class WordOfTheDay
+class Parser
   attr_reader :url, :page
   def initialize(url="https://www.merriam-webster.com/word-of-the-day")
     #word of the day url
