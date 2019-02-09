@@ -1,4 +1,4 @@
 ## RUNFILE
-require_relative '../lib/bot'
+require_relative '../config/environment'
 
 WODBot.run

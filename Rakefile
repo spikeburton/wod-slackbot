@@ -3,7 +3,7 @@ task :environment do
 end
 
 desc 'start a console session in pry'
-task :console do
+task :console => :environment do
   require_relative 'tools/console'
 end
 
