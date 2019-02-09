@@ -6,11 +6,11 @@ end
 namespace :deploy do
   desc 'start wodbot'
   task :run => :environment do
-    require_relative 'tools/console'
+    require_relative 'bin/run'
   end
 
   desc 'puts the token to the console'
   task :saytoken => :environment do
-    puts File.read './config/.token'
+    puts File.read 'config/.token'
   end
 end
