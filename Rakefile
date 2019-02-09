@@ -1,6 +1,6 @@
 desc 'setup API token'
 task :environment do
-  ENV['SLACK_API_TOKEN'] = 'xoxb-546610318466-548175781350-uxWq0duJpB22ibzzccRL48If'
+  ENV['SLACK_API_TOKEN'] = File.read('config/.token').chomp
 end
 
 namespace :deploy do
@@ -10,6 +10,7 @@ namespace :deploy do
   end
 
   task :saytoken => :environment do
-    puts ENV['SLACK_API_TOKEN']
+    # puts ENV['SLACK_API_TOKEN']
+    puts File.read './config/.token'
   end
 end
