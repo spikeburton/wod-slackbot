@@ -1,4 +1,4 @@
 ## A place to play and test
-require_relative '../lib/bot.rb'
+require_relative '../config/environment'
 
-WODBot.run
+Pry.start

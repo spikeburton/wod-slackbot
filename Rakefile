@@ -1,6 +1,10 @@
-desc 'setup API token'
 task :environment do
   ENV['SLACK_API_TOKEN'] = File.read('config/.token').chomp
+end
+
+desc 'start a console session in pry'
+task :console do
+  require_relative 'tools/console'
 end
 
 namespace :deploy do
