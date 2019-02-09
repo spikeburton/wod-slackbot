@@ -9,8 +9,8 @@ namespace :deploy do
     require_relative 'tools/console'
   end
 
+  desc 'puts the token to the console'
   task :saytoken => :environment do
-    # puts ENV['SLACK_API_TOKEN']
     puts File.read './config/.token'
   end
 end
