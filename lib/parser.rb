@@ -6,13 +6,14 @@ class Parser
   def initialize(url="https://www.merriam-webster.com/word-of-the-day")
     #word of the day url
     #https://www.merriam-webster.com/word-of-the-day
-    #initcialze with a url
+    #initialze with a url
     @url = url
   end
   def fetch
     #do the http request with rest client
     #and return todays word as a curtesy
-    @page = Nokogiri::HTML(RestClient.get(@url))
+    request = RestClient.get(@url)
+    @page = Nokogiri::HTML()
     todays_word
   end
   def todays_word
