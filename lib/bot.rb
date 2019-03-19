@@ -25,8 +25,16 @@ class WODBot < SlackRubyBot::Bot
 
   command /hello|hi|hey|yo/i do |client, data, _match|
     sayings = ["What's up, bitch?", "You already know what tf is goin' on", "Yo, I'm feeling sassy",
-      "Weird flex but aight"]
+      "Weird flex but aight", "👊"]
 
     client.say(channel: data.channel, text: sayings.sample)
+  end
+
+  command /coffee/i do |client, data, _match|
+    client.say(channel: data.channel, text: "☕️")
+  end
+
+  command /thank you|thanks|/ do |client, data, _match|
+    client.say(channel: data. channel, text: "🙏")
   end
 end
