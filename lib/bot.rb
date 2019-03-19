@@ -22,4 +22,11 @@ class WODBot < SlackRubyBot::Bot
       client.say(channel: data.channel, text: "_#{c}_")
     end
   end
+
+  command /hello|hi|hey|yo/i do |client, data, _match|
+    sayings = ["What's up, bitch?", "You already know what tf is goin' on", "Yo, I'm feeling sassy",
+      "Weird flex but aight"]
+
+    client.say(channel: data.channel, text: sayings.sample)
+  end
 end
