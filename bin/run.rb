@@ -1,4 +1,4 @@
 ## RUNFILE
 require_relative '../config/environment'
 
-WODBot.run
+WODBot::App.run
