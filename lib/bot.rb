@@ -25,8 +25,9 @@ module WODBot
     end
 
     command /.*\b(hello|hi|hey|yo)\b.*$/i do |client, data, _match|
-      sayings = ["What's up, fool?", "You already know what tf is goin' on", "Yo, I'm feeling sassy",
-        "Weird flex but aight", "👋"]
+      # sayings = ["What's up, fool?", "You already know what tf is goin' on", "Yo, I'm feeling sassy",
+      #   "Weird flex but aight", "👋"]
+      sayings = ["What's up, fool?", "Yo, I'm feeling sassy", "👋"]
 
       client.say(channel: data.channel, text: sayings.sample)
     end
