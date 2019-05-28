@@ -29,6 +29,6 @@ class Parser
     #returns the WOD definition
     #this will probably break if the website changes
     # @page.css(".wod-definition-container").css("p")[0].inner_text
-    @page.css(".wod-definition-container").css("p").collect { |c| c.inner_text }.first(3)
+    @page.css(".wod-definition-container").css("p").collect { |c| c.inner_text }.first(2)
   end
 end

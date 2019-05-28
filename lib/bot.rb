@@ -35,10 +35,10 @@ module WODBot
       client.say(channel: data.channel, text: "☕️")
     end
 
-    command /thank you|thanks|/ do |client, data, _match|
+    command /.*\b(thank you|thanks)\b.*$/i do |client, data, _match|
       sayings = ["🙏", "👊"]
 
-      client.say(channel: data. channel, text: sayings.sample)
+      client.say(channel: data.channel, text: sayings.sample)
     end
   end
 
