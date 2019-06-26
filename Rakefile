@@ -13,11 +13,6 @@ namespace :deploy do
     require_relative 'bin/run'
   end
 
-  desc 'deploy the bot'
-  task :run do
-    require_relative 'bin/run'
-  end
-
   desc 'puts the token to the console'
   task :saytoken => :environment do
     puts File.read 'config/.token'
