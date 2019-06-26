@@ -8,9 +8,14 @@ task :console => :environment do
 end
 
 namespace :deploy do
-  desc 'start wodbot on a local server'
-  task :local => :environment do
+  desc 'start wodbot'
+  task :run => :environment do
     require_relative 'bin/run'
+  end
+
+  desc 'run wodbot on a local server'
+  task :local => :environment do
+    system("bundle exec puma")
   end
 
   desc 'puts the token to the console'
