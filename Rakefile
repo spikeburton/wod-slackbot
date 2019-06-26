@@ -8,8 +8,13 @@ task :console => :environment do
 end
 
 namespace :deploy do
-  desc 'start wodbot'
-  task :run => :environment do
+  desc 'start wodbot on a local server'
+  task :local => :environment do
+    require_relative 'bin/run'
+  end
+
+  desc 'deploy the bot'
+  task :run do
     require_relative 'bin/run'
   end
 
