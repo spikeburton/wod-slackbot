@@ -5,5 +5,9 @@ module WODBot
     get '/' do
       "We live, fam!"
     end
+
+    post '/' do
+      "I'm awake!"
+    end
   end
 end
