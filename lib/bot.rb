@@ -41,6 +41,10 @@ module WODBot
 
       client.say(channel: data.channel, text: sayings.sample)
     end
+
+    command 'ping' do |client, data, _match|
+      client.say(channel: data.channel, text: 'pong 🏓')
+    end
   end
 
   class Default < SlackRubyBot::Commands::Base
