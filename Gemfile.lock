@@ -48,7 +48,8 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multipart-post (2.1.1)
-    mustermann (1.0.3)
+    mustermann (2.0.2)
+      ruby2_keywords (~> 0.0.1)
     netrc (0.11.0)
     nio4r (2.3.1)
     nokogiri (1.10.3)
@@ -58,17 +59,18 @@ GEM
       method_source (~> 0.9.0)
     puma (4.0.0)
       nio4r (~> 2.0)
-    rack (2.0.7)
-    rack-protection (2.0.5)
+    rack (2.2.4)
+    rack-protection (2.2.3)
       rack
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    sinatra (2.0.5)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.5)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.3)
+      mustermann (~> 2.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.3)
       tilt (~> 2.0)
     slack-ruby-bot (0.12.0)
       hashie
@@ -81,7 +83,7 @@ GEM
       hashie
       websocket-driver
     thread_safe (0.3.6)
-    tilt (2.0.9)
+    tilt (2.0.11)
     timers (4.3.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
@@ -101,7 +103,7 @@ DEPENDENCIES
   pry
   puma (~> 4.0)
   rest-client
-  sinatra (~> 2.0)
+  sinatra (~> 2.2)
   slack-ruby-bot
 
 RUBY VERSION
